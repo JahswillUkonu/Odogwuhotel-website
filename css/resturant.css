@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Marcellus', 'Noto Sans', sans-serif;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Marcellus', serif;
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1d1c1c;
+    /* Dark gray background color */
+    color: #f0f0f0;
+    /* Light gray text color */
+    ;
+}
+
+
+/* ==============NAVBAR================= */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: .5px solid wheat; */
+    color: wheat;
+    background-color: rgba(56, 56, 56, 0.677);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* top: 2rem; */
+    /* z-index: 2;
+    isolation: isolate; */
+}
+
+.navbar .left-nav {
+    font-family: 'Marcellus', 'Noto Sans';
+    font-size: 2rem;
+}
+
+.navbar .middle-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.navbar .middle-nav ul a {
+    color: #f0f0f0;
+}
+
+.navbar .middle-nav ul a:hover {
+    color: wheat;
+    transition: 200ms ease-in-out;
+}
+
+.navbar .right-nav button {
+    background-color: rgba(255, 255, 255, 0);
+    color: #f0f0f0;
+    border-color: rgb(86, 85, 85);
+    border-width: 1px;
+    border-style: solid;
+    width: 120px;
+}
+
+.navbar .right-nav button:hover {
+    color: wheat;
+    transition: 200ms ease-in-out;
+}
+
+
+/* ===========END OF NAVBAR=========== */
+
+.resturantPage .resturantPageBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.264)), url(..//media/resturant\ background1.jpg);
+    color: white;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.resturantPage .resturantPageBackground .intro-text h1 {
+    font-family: 'Marcellus', 'Noto Sans';
+    font-size: 7rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.resturantPage .resturantPageBackground .intro-text h1 span {
+    color: wheat;
+}
+
+.resturantPage .resturantPageBackground .intro-text p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* ===========ABOUT PAGE=========== */
+
+.ResturantServices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.ResturantServices .ResturantServicesBackground {
+    background-image: url(..//media/resturantServices.jpg);
+    color: white;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.ResturantServices .ResturantServicesText {
+    flex: 1;
+    padding: 2rem;
+    color: #f0f0f0;
+}
+
+.ResturantServices .ResturantServicesText h6 {
+    font-family: 'Marcellus', 'Noto Sans';
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: wheat;
+}
+
+.ResturantServices .ResturantServicesText h1 {
+    font-family: 'Marcellus', 'Noto Sans';
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ResturantServices .ResturantServicesText p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+    text-spacing-trim: 1rem;
+    text-align: justify;
+}
+
+.ResturantServices .ResturantServicesText button {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: wheat;
+    border-width: 1px;
+    color: white;
+    border-style: solid;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.ResturantServices .ResturantServicesText button a {
+    color: wheat;
+}
+
+.ResturantServices .ResturantServicesText button:hover {
+    background-color: wheat;
+    color: black;
+    transition: 200ms ease-in-out;
+}
+
+.ResturantServices .ResturantServicesText button:hover a {
+    color: black;
+}
+
+
+/*============END OF ABOUT PAGE===========*/
+
+.InRoomDining {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.InRoomDining .InRoomDiningBackground {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.468), rgba(0, 0, 0, 0.264)), url(..//media/eating\ in\ room.jpg);
+    color: white;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex: 1;
+}
+
+.InRoomDining .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: #f0f0f0;
+    margin-top: 15em;
+    margin-bottom: 10em;
+}
+
+.InRoomDining .intro h1 {
+    font-family: 'Marcellus', 'Noto Sans';
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.InRoomDining .intro p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+    text-spacing-trim: 1rem;
+    text-align: justify;
+}
+
+.InRoomDining ol li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+    text-spacing-trim: 1rem;
+    text-align: justify;
+    list-style: circle;
+}
+
+
+/* Back to Top Button */
+
+#backToTopBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed position */
+    bottom: 20px;
+    /* 20px from the bottom */
+    right: 30px;
+    /* 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #5555552f;
+    /* Dark background color */
+    color: white;
+    /* White text color */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#backToTopBtn:hover {
+    background-color: #333;
+    /* Darker background on hover */
+}

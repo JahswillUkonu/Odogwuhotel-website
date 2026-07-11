@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Odogu Hotel and Suites(Rooms)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="../css/room.css">
+
+    <link href="../bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">ODOGU HOTELS</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNav" aria-controls="mainNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#rooms">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pages">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <a href="#rooms" class="btn btn-primary">Rooms</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="roomPage" id="room">
+        <div class="roomPageBackground">
+            <div class="room-background-text">
+
+                <h1>Book Your Stay</h1>
+                <p>A Stay Infused With creativity and comfort</p>
+
+            </div>
+
+            <div class="availability-table">
+                <table>
+                    <tr>
+                        <td>Check In</td>
+                        <td><input type="date" name="checkin" id="checkin"></td>
+                    </tr>
+                    <tr>
+                        <td>Check Out</td>
+                        <td><input type="date" name="checkout" id="checkout"></td>
+                    </tr>
+                    <tr>
+                        <td>Guests</td>
+                        <td><input type="number" name="guests" id="guests" min="1" max="10"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button id="checkAvailability">Check Availability</button></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- booking table -->
+
+
+
+
+
+    </section>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h6>Welcome to Odogu Aparthotel</h6>
+            <h1>Explore our refined accommodation options and find the perfect space for your stay.</h1>
+            <p>All rooms have a bathroom with bathtub and/or shower, cable television/radio, free WIFI and mini bar. In addition, all rooms are equipped with a Nespresso coffee machine. Most rooms are carpeted, some have parquet flooring.</p>
+        </div>
+
+    </section>
+
+    <section class="room-container">
+        <div class="room">
+            <img src="../media/standard.jpg" alt="">
+            <h2>Standard Room</h2>
+            <p>From $99</p>
+            <a href="standardRoom.html" class="btn btn-primary">Book Now</a>
+        </div>
+
+        <div class="room">
+            <img src="../media/delux.jpg" alt="">
+            <h2>Deluxe Room</h2>
+            <p>From $199</p>
+            <a href="deluxeRoom.html" class="btn btn-primary">Book Now</a>
+        </div>
+
+        <div class="room">
+            <img src="../media/executive.jpg" alt="">
+            <h2>Executive Room</h2>
+            <p>From $299</p>
+            <a href="executiveRoom.html" class="btn btn-primary">Book Now</a>
+        </div>
+
+        <div class="room">
+            <img src="../media/presidential.jpg" alt="">
+            <h2>Presidential Suite</h2>
+            <p>From $399</p>
+            <a href="presidentialSuite.html" class="btn btn-primary">Book Now</a>
+        </div>
+    </section>
+
+    <section class="amenities">
+        <div class="amenities-text">
+            <h6>The Essential In-Room Amenities</h6>
+            <h1>Our spaces have all the <br> essentials you need for your stay.</h1>
+        </div>
+
+
+
+        <div class="amenities-cards">
+            <div class="amenity-card">
+                <i class="fas fa-dumbbell fa-3x"></i>
+                <h2>Gym</h2>
+                <p>Our gym is well equipped with modern facilities. You can keep fit and stay healthy.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-swimmer fa-3x"></i>
+                <h2>Swimming Pool</h2>
+                <p>Our swimming pool is well maintained and offers a relaxing environment for our guests.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-utensils fa-3x"></i>
+                <h2>Restaurant</h2>
+                <p>Our restaurant offers a variety of local and continental dishes to our guests.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-spa fa-3x"></i>
+                <h2>Spa</h2>
+                <p>Our spa offers a range of treatments to help you relax and rejuvenate.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-wifi fa-3x"></i>
+                <h2>Internet</h2>
+                <p>Our hotel offers free WIFI to our guests. You can stay connected with your loved ones.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-concierge-bell fa-3x"></i>
+                <h2>Concierge</h2>
+                <p>Our concierge service is available 24/7 to assist you with any needs or requests.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-parking fa-3x"></i>
+                <h2>Parking</h2>
+                <p>Our hotel offers secure parking facilities for our guests.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-coffee fa-3x"></i>
+                <h2>Coffee Shop</h2>
+                <p>Enjoy a variety of coffee and snacks at our in-house coffee shop.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-baby fa-3x"></i>
+                <h2>Childcare</h2>
+                <p>We offer childcare services to ensure your little ones are well taken care of.</p>
+            </div>
+
+            <div class="amenity-card">
+                <i class="fas fa-shuttle-van fa-3x"></i>
+                <h2>Shuttle Service</h2>
+                <p>Our shuttle service is available to transport you to and from the airport.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ContactPage" id="contact">
+
+        <div class="Contact-pages">
+
+            <div class="locationBackground">
+                <h6>Our Location</h6>
+                <h1>Getting Here</h1>
+                <p>Odugu Hotels and Suites, 123 Victoria Island, Lagos, Nigeria
+                    <br> Tel: +234 814-903-7555 <br> Email:information@odoguhotels.com
+                </p>
+                <button id="btn">Get Directions</button>
+                <div class="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86354.42997745666!2d3.567912631822556!3d6.489259101647537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bfa48bfb47819%3A0x4ab330970bdf93c6!2sGRAND%20PLAY%20HOTEL!5e0!3m2!1sen!2sng!4v1741947110326!5m2!1sen!2sng"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            </div>
+
+
+            <div class="reservationBackground">
+                <h6>Book A Room</h6>
+                <h1>Spend Your Time With Us</h1>
+                <p>Everything at Odogu Hotels, in its restaurants, bar and spa is designed to make your stay, lunch or dinner unforgettable. <br> Tel: +234 814-903-7555 <br> Email:reservation@odoguhotels.com
+                </p>
+                <a href="#room" class="btn btn-primary">Reserve Your Stay</a>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <div class="b-example-divider"></div>
+    <div class="container">
+       <footer class="py-5">
+        <div class="row"> 
+          <div class="col-6 col-md-2 mb-3">
+            <h5>ADDRESS</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">hotel in Port-harcourt</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >08149037555</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">hotel@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>INFORMATION</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About Us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Delivery information</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Terms & Conditions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Site Map</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <h5>MY ACCOUNT</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">My Account</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Order History</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Wish List</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Newsletter</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Returns</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>NEWS LETTER</h5>
+              <p>Subscribe to our newsletter for latest news, tips, and advice</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="email"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>&copy; 2025 Odoguhotels Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Instagram"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use></svg
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#" aria-label="Facebook"
+                ><svg class="bi" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#facebook"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+    </div>
+    <script src="../bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/room.js"></script>
+</body>
+
+</html>
