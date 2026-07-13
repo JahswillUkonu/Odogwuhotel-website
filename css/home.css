@@ -818,7 +818,7 @@ body {
     font-family: 'Marcellus', 'Noto Sans';
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--heading-color);
+    /* color: var(--heading-color); */
 }
 
 .ContactPage .Contact-pages p {

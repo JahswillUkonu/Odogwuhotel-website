@@ -170,7 +170,7 @@
         }
         
         .roomPage .roomPageBackground .room-background-text h1 {
-            color: var(--heading-color);
+            /* color: var(--heading-color); */
             font-family: 'Marcellus', 'Noto Sans';
             font-size: 5rem;
             font-weight: 500;
@@ -180,7 +180,7 @@
         .roomPage .roomPageBackground .room-background-text p {
             font-size: 1rem;
             margin-bottom: 1rem;
-            color: var(--text-color);
+            /* color: var(--text-color); */
         }
 
         
@@ -526,7 +526,7 @@
             font-family: 'Marcellus', 'Noto Sans';
             font-size: 2.5rem;
             margin-bottom: 1rem;
-            color: var(--heading-color);
+            /* color: var(--heading-color); */
         }
         
         .ContactPage .Contact-pages p {
