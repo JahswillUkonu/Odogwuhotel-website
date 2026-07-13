@@ -31,35 +31,76 @@ window.addEventListener('scroll', function() {
 //end of nav bar behavior
 
 
-//CODE FOR FULLCALENDAR
+// ================= RESERVE NOW FUNCTIONALITY =================
 document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
+    const checkinInput = document.getElementById('checkin');
+    const checkoutInput = document.getElementById('checkout');
+    const adultsInput = document.getElementById('adults');
+    const childrenInput = document.getElementById('children');
+    const reserveBtn = document.getElementById('reserveBtn');
+    const resultBox = document.getElementById('reservationResult');
 
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth',
-        headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay'
-        },
-        events: [{
-                title: 'Available',
-                start: '2025-03-14',
-                end: '2025-03-16'
-            },
-            {
-                title: 'Booked',
-                start: '2025-03-17',
-                end: '2025-03-20',
-                color: 'red' // Change color for booked dates
-            }
-        ]
+    if (!reserveBtn) return; // guard in case markup changes
+
+    const todayStr = new Date().toISOString().split('T')[0];
+    checkinInput.setAttribute('min', todayStr);
+
+    checkinInput.addEventListener('change', () => {
+        checkoutInput.setAttribute('min', checkinInput.value);
     });
 
-    calendar.render();
-});
+    function showResult(message, isError) {
+        resultBox.textContent = message;
+        resultBox.classList.remove('form-result--success', 'form-result--error');
+        resultBox.classList.add(isError ? 'form-result--error' : 'form-result--success');
+    }
 
-//end of fullcalendar code
+    reserveBtn.addEventListener('click', function() {
+        const checkin = checkinInput.value;
+        const checkout = checkoutInput.value;
+        const adults = parseInt(adultsInput.value, 10);
+        const children = childrenInput.value ? parseInt(childrenInput.value, 10) : 0;
+        const roomName = reserveBtn.getAttribute('data-room-name');
+        const pricePerNight = parseFloat(reserveBtn.getAttribute('data-room-price'));
+
+        if (!checkin || !checkout) {
+            showResult('Please select both a check-in and check-out date.', true);
+            return;
+        }
+
+        const checkinDate = new Date(checkin);
+        const checkoutDate = new Date(checkout);
+        const today = new Date(todayStr);
+
+        if (checkinDate < today) {
+            showResult('Check-in date cannot be in the past.', true);
+            return;
+        }
+
+        if (checkoutDate <= checkinDate) {
+            showResult('Check-out date must be after the check-in date.', true);
+            return;
+        }
+
+        if (!adults || adults < 1) {
+            showResult('Please enter at least 1 adult.', true);
+            return;
+        }
+
+        if (children < 0) {
+            showResult('Number of children cannot be negative.', true);
+            return;
+        }
+
+        const nights = Math.round((checkoutDate - checkinDate) / (1000 * 60 * 60 * 24));
+        const total = (nights * pricePerNight).toFixed(2);
+
+        showResult(
+            `Reservation confirmed: ${roomName} for ${adults} adult${adults > 1 ? 's' : ''}${children > 0 ? ` and ${children} child${children > 1 ? 'ren' : ''}` : ''}, ${nights} night${nights > 1 ? 's' : ''} (${checkin} to ${checkout}). Estimated total: $${total}.`,
+            false
+        );
+    });
+});
 
 //back to top button
 
